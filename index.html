@@ -50,13 +50,22 @@
 		})();
 	</script>
 	<link rel="stylesheet" type="text/css" href="pc/css/common.css">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/lottie-web/5.12.2/lottie.min.js"></script> <!-- lottie cdn -->
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/lottie-web/5.12.2/lottie.min.js"></script> -->
 
 	<div class="wrap _pc">
 		<div class="view_wrap">
 			<div class="content">
 				<div class="section sec_1" id="sec1">
-                    <div id="ambassdor-ani"></div>
+                    <!-- mp4 변경 -->
+                    <div id="ambassdor-ani" class="ambassdor-ani">
+                        <div class="video-container">
+                            <video autoplay loop muted playsinline>
+                                <source src="./pc/video/am_visual.mp4" type="video/mp4">
+                                Your browser does not support the video tag.
+                            </video>
+                        </div>
+                    </div>
+                    <!-- mp4 변경 : end -->
 					<div class="layout"><img src="pc/images/sec_01.png" alt="" /></div>
                     <div class="video-lay">
                         <div class="video-container">
@@ -132,7 +141,16 @@
 		<div class="view_wrap">
 			<div class="content">
 				<div class="section sec_1" id="sec1">
-                    <div id="ambassdor-ani-m"></div>
+                    <!-- mp4 변경 -->
+                    <div id="ambassdor-ani-m" class="ambassdor-ani">
+                        <div class="video-container">
+                            <video autoplay loop muted playsinline>
+                              <source src="./pc/video/am_visual.mp4" type="video/mp4">
+                              Your browser does not support the video tag.
+                            </video>
+                        </div>
+                    </div>
+                    <!-- mp4 변경 : end -->
 					<div class="layout"><img src="mo/images/sec_01.png" alt="" /></div>
                     <div class="video-lay">
                         <div class="video-container">
@@ -1083,22 +1101,22 @@
         })(jQuery);
 
         // ambassador 텍스트 ani(pc)
-        var ambassadorAni = bodymovin.loadAnimation({
-            container: document.getElementById('ambassdor-ani'), // 필수, 애니메이션 들어가는 곳 
-            path: './pc/js/ambassador.json', // 필수(url 또는 json파일 다운로드 경로)
-            renderer: 'svg', // 필수
-            loop: true, // 반복 여부
-            autoplay: true // 자동 재생 여부
-        });
+        // var ambassadorAni = bodymovin.loadAnimation({
+        //     container: document.getElementById('ambassdor-ani'), // 필수, 애니메이션 들어가는 곳 
+        //     path: './pc/js/ambassador.json', // 필수(url 또는 json파일 다운로드 경로)
+        //     renderer: 'svg', // 필수
+        //     loop: true, // 반복 여부
+        //     autoplay: true // 자동 재생 여부
+        // });
 
         // ambassador 텍스트 ani(mo)
-        var ambassadorAni2 = bodymovin.loadAnimation({
-            container: document.getElementById('ambassdor-ani-m'), // 필수, 애니메이션 들어가는 곳 
-            path: './pc/js/ambassador.json', // 필수(url 또는 json파일 다운로드 경로)
-            renderer: 'svg', // 필수
-            loop: true, // 반복 여부
-            autoplay: true // 자동 재생 여부
-        });
+        // var ambassadorAni2 = bodymovin.loadAnimation({
+        //     container: document.getElementById('ambassdor-ani-m'), // 필수, 애니메이션 들어가는 곳 
+        //     path: './pc/js/ambassador.json', // 필수(url 또는 json파일 다운로드 경로)
+        //     renderer: 'svg', // 필수
+        //     loop: true, // 반복 여부
+        //     autoplay: true // 자동 재생 여부
+        // });
 
         //모달 열기
         function modal(id){
