@@ -208,4 +208,10 @@ select {-ms-user-select:none; user-select:none; -ms-appearance:none; appearance:
     .video-lay .video-container video { border-radius: 15px;}
 }
 
+video {
+    -webkit-mask-image: -webkit-radial-gradient(white, black);
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+}
+
 .overlay_t { background-color: #000; bottom: 0; left: 0; opacity: 0.5; filter: alpha(opacity = 50); position: fixed; right: 0; top: 0; z-index: 99; display:none;}
