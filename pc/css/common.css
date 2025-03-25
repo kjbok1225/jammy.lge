@@ -39,17 +39,16 @@ body {position:relative; width:100%; height:100%; margin:0; padding:0; backgroun
 .section {position:relative; width:100%; overflow:hidden;}
 .layout {position:relative; z-index:0; pointer-events:none; -webkit-user-drag:none; user-drag:none; user-select:none;}
 .layout img {display:block; width:100%;}
-.ambassdor-ani {
-    
-}
+
 .ambassdor-ani .video-container {
     position: relative;
     width: 100%;
     height: 0;
     max-width: 1920px; 
-    max-height: 800px;
-    padding-top: calc((800 / 1920 * 100%));
-    padding-top: 41.6%;
+    /* max-height: 800px;
+    padding-top: 41.6%; */
+    max-height: 2410px;
+    padding-top: 125.52%;
     overflow: hidden;
 }
 .ambassdor-ani .video-container video {
@@ -59,7 +58,12 @@ body {position:relative; width:100%; height:100%; margin:0; padding:0; backgroun
     width: 100%;
     height: 100%;
     object-fit: cover;
-  }
+    outline: none; border: 0;
+    -webkit-mask-image: -webkit-radial-gradient(white, black);
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+}
+
 
 
 .sec_2 { position:relative; z-index:1; width:100%; padding-top:8.696%; max-width: 1920px; margin:0 auto; z-index: 10;}
@@ -206,6 +210,12 @@ select {-ms-user-select:none; user-select:none; -ms-appearance:none; appearance:
     .video-lay { bottom: 11%;}
     .video-lay .video-container { border-radius: 15px;}
     .video-lay .video-container video { border-radius: 15px;}
+
+    .ambassdor-ani .video-container {
+        max-width: 1124px; 
+        max-height: 1830px;
+        padding-top: 162.81%;
+    }
 }
 
 video {

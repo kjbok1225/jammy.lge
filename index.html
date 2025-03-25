@@ -56,17 +56,17 @@
 		<div class="view_wrap">
 			<div class="content">
 				<div class="section sec_1" id="sec1">
-                    <!-- mp4 변경 -->
+                    <!-- 영상 통으로 -->
                     <div id="ambassdor-ani" class="ambassdor-ani">
                         <div class="video-container">
-                            <video autoplay loop muted playsinline>
-                                <source src="./pc/video/am_visual.mp4" type="video/mp4">
-                                Your browser does not support the video tag.
+                            <video autoplay loop muted playsinline preload="auto">
+                              <source src="./pc/video/main_visual.mp4" type="video/mp4">
+                              Your browser does not support the video tag.
                             </video>
                         </div>
                     </div>
-                    <!-- mp4 변경 : end -->
-					<div class="layout"><img src="pc/images/sec_01.png" alt="" /></div>
+                    <!-- 영상 통으로 : end -->
+					<!-- <div class="layout"><img src="pc/images/sec_01.png" alt="" /></div>
                     <div class="video-lay">
                         <div class="video-container">
                             <video autoplay loop muted playsinline>
@@ -86,7 +86,7 @@
                               Your browser does not support the video tag.
                             </video>
                         </div>
-                    </div>
+                    </div> -->
                     
 					<div class="sr_only">LG전자 앰버서더 2기 모집<br />끼획력 있는 크리에이터라면 누구나!</div>
 					<div class="sr_only">기간: 2025. 3. 27(목) ~ 2025. 4. 14(월)</div>
@@ -530,16 +530,14 @@
                                                     </label>
                                                     <input type="file" id="imageInput" name="imageInput" multiple />
                                                 </div>
-						    <!--
-                                                <div class="button-file-upload">
+                                                <!-- <div class="button-file-upload">
                                                     <a href="javascript:;" onclick="">
                                                         <picture class="img">
                                                             <source srcset="pc/images/button_upload.png" media="(min-width: 768px)">
                                                             <img src="mo/images/button_upload.png" alt="" />
                                                         </picture>
                                                     </a>
-                                                </div>
-						    -->
+                                                </div> -->
                                             </div>
                                         
                                         <h3 class="blind">업로드된 파일</h3>
