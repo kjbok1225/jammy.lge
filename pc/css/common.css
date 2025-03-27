@@ -173,7 +173,7 @@ select {-ms-user-select:none; user-select:none; -ms-appearance:none; appearance:
 }
 
 @media only screen and (max-width: 1380px) {
-    .view_wrap {width:100%;}
+    .view_wrap {width:100%;max-width: 767px;}
     .goto_top {margin-left:-330px;}
     .banner {display:none;}
     .mobile_wrap {margin:0 auto;}
