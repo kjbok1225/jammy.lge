@@ -1063,43 +1063,43 @@
 
     <script type="text/javascript">
 
-        // (function ($) {
-        //     $(window).on('scroll', function () {
+        (function ($) {
+            $(window).on('scroll', function () {
 
-        //         $('.wrap').each(function(idx, val) {
-        //             var $this = $(this);
-        //             var scrollY = $(window).scrollTop();
-        //             var $nav = $this.find('.sec_2');
-        //             var navY = $nav.offset().top;
-        //             var navHeight = $nav.outerHeight();
-        //             var fixedContentHeight = $this.find('#sec3').outerHeight() + $this.find('#sec4').outerHeight() + $this.find('#sec5').outerHeight() + $this.find('#sec6').outerHeight();
+                $('.wrap').each(function(idx, val) {
+                    var $this = $(this);
+                    var scrollY = $(window).scrollTop();
+                    var $nav = $this.find('.sec_2');
+                    var navY = $nav.offset().top;
+                    var navHeight = $nav.outerHeight();
+                    var fixedContentHeight = $this.find('#sec3').outerHeight() + $this.find('#sec4').outerHeight() + $this.find('#sec5').outerHeight() + $this.find('#sec6').outerHeight();
 
-        //             if (scrollY >= navY && navY + fixedContentHeight - navHeight >= scrollY) {
-        //                 if (!$nav.is('._fixed')) {
-        //                     $nav.addClass('_fixed').removeClass('_end');
-        //                 }
-        //             } else {
-        //                 if ($nav.is('._fixed')) {
-        //                     $nav.removeClass('_fixed');
-        //                     $nav.find('._current');
-        //                 }
-        //                 if (navY + fixedContentHeight - navHeight <= scrollY) {
-        //                     if (!$nav.is('._end')) {
-        //                         $nav.addClass('_end');
-        //                     }
-        //                 }
-        //             }
+                    if (scrollY >= navY && navY + fixedContentHeight - navHeight >= scrollY) {
+                        if (!$nav.is('._fixed')) {
+                            $nav.addClass('_fixed').removeClass('_end');
+                        }
+                    } else {
+                        if ($nav.is('._fixed')) {
+                            $nav.removeClass('_fixed');
+                            $nav.find('._current');
+                        }
+                        if (navY + fixedContentHeight - navHeight <= scrollY) {
+                            if (!$nav.is('._end')) {
+                                $nav.addClass('_end');
+                            }
+                        }
+                    }
 
-        //             $this.find('._fixed_content').each(function(cidx, cval) {
-        //                 if ($(this).offset().top - navHeight <= scrollY && ($(this).offset().top + $(this).outerHeight()) - navHeight >= scrollY) {
-        //                     if (!$this.find('#sec2').find('a[href="#'+ $(this).attr('id') +'"]').is('._current')) {
-        //                         $this.find('#sec2').find('a[href="#'+ $(this).attr('id') +'"]').addClass('_current').siblings().removeClass('_current');
-        //                     }
-        //                 }
-        //             });
-        //         });
-        //     });
-        // })(jQuery);
+                    $this.find('._fixed_content').each(function(cidx, cval) {
+                        if ($(this).offset().top - navHeight <= scrollY && ($(this).offset().top + $(this).outerHeight()) - navHeight >= scrollY) {
+                            if (!$this.find('#sec2').find('a[href="#'+ $(this).attr('id') +'"]').is('._current')) {
+                                $this.find('#sec2').find('a[href="#'+ $(this).attr('id') +'"]').addClass('_current').siblings().removeClass('_current');
+                            }
+                        }
+                    });
+                });
+            });
+        })(jQuery);
 
         // ambassador 텍스트 ani(pc)
         // var ambassadorAni = bodymovin.loadAnimation({
